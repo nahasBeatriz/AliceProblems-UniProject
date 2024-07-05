@@ -1,6 +1,6 @@
 # Projeto de Redes de Computadores
 
-Professor: Guilherme Werneck de Oliveira
+Professor: Guilherme Werneck de Oliveira     
 Integrantes: Beatriz R. Nahas, Rafael Correia Alves, Marjorie Ap. Cortez Daenecke, André Luiz Cecato Justus
 
 ## O Problema
@@ -25,3 +25,11 @@ solicitará essas informações e **atualizará localmente**_.
 ### Proposta de solução
 
 trancar o curso
+
+### Funções Principais
+
+todas elas
+
+### Conclusões
+
+nenhumas
