@@ -30,6 +30,14 @@ trancar o curso
 
 todas elas
 
+> [!NOTE]
+> olha q q eu descobri q daora
+
+codigo codigo:
+```
+codigo codigo
+```
+
 ### Conclusões
 
 nenhumas
