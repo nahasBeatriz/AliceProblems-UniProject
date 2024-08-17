@@ -24,11 +24,9 @@ void HandleTCPClient(int clientSocket) {
     // Envia a data e hora para o cliente socket com o send()
     ssize_t numBytesSent = send(clientSocket, buffer, strlen(buffer), 0);
  
-
     if (numBytesSent < 0) {
         DieWithUserMessage("send() failed", "Unable to send data");
     }
-    
     close(clientSocket);
 }
 
@@ -36,7 +34,6 @@ int main(int argc, char *argv[]) {
     if (argc != 2) {
         DieWithUserMessage("Parameter(s)", "<Server Port>");
     }
-
     in_port_t serverPort = atoi(argv[1]);
 
     // A função socket cria e retorna um descritor de arquivo
@@ -44,7 +41,6 @@ int main(int argc, char *argv[]) {
     if ((serverSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0) {
         DieWithUserMessage("socket() failed", "Unable to create socket");
     }
-
     struct sockaddr_in serverAddress;                   //Endereço local
     memset(&serverAddress, 0, sizeof(serverAddress));   //Limpa a memória para ter certeza que não tem nada antes de iniciar
     serverAddress.sin_family = AF_INET;                 //Especifica o tipo de endereço, nesse caso é IPV4  
@@ -59,7 +55,6 @@ int main(int argc, char *argv[]) {
     if (listen(serverSocket, MAXPENDING) < 0) {
         DieWithUserMessage("listen() failed", "Unable to listen for connections");
     }
-
     for (;;) {
         struct sockaddr_in clientAddress;
         socklen_t clientAddressLen = sizeof(clientAddress);
@@ -68,7 +63,6 @@ int main(int argc, char *argv[]) {
         if (clientSocket < 0) {
             DieWithUserMessage("accept() failed", "Unable to accept client connection");
         }
-
         char clientName[INET_ADDRSTRLEN];
         //o Ntop transforma os dados de binário para string
         if (inet_ntop(AF_INET, &clientAddress.sin_addr.s_addr, clientName, sizeof(clientName)) != NULL) {
@@ -76,10 +70,8 @@ int main(int argc, char *argv[]) {
         } else {
             puts("Unable to get client address");
         }
-
         HandleTCPClient(clientSocket);
     }
-
     close(serverSocket);
     return 0;
 }
