@@ -20,7 +20,6 @@ int main(int argc, char *argv[]) {
     if (argc < 2 || argc > 3)
         DieWithUserMessage("Parameter(s)",
             "<Server Address> [<Server Port>]");
-
     char *serverIP = argv[1];
     in_port_t serverPort = (argc == 3) ? atoi(argv[2]) : 7;
     // A função socket cria e retorna um descritor de arquivo
