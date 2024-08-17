@@ -21,23 +21,3 @@ Alice te procurou e solicitou sua ajuda que prontamente se disponibilizou. A
 solução proposta por você foi _desenvolver uma comunicação **cliente-servidor** entre
 um computador que possui a data e a hora corretas e o computador dela, que
 solicitará essas informações e **atualizará localmente**_.
-
-### Proposta de solução
-
-trancar o curso
-
-### Funções Principais
-
-todas elas
-
-> [!NOTE]
-> olha q q eu descobri q daora
-
-codigo codigo:
-```
-codigo codigo
-```
-
-### Conclusões
-
-nenhumas
