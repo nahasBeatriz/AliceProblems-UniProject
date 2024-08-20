@@ -27,6 +27,7 @@ solicitará essas informações e **atualizará localmente**_.
 Dentro de uma pasta com ambos os códigos `tcp.server.c` e `tcp.cliente.c`, abra um terminal para cada código para gerar os executores e o programa em si.
 
 
+
 No primeiro terminal, digite o seguinte comando:
 ```
 gcc -o tcp_server tcp_server.c
@@ -38,6 +39,7 @@ E logo em seguida, digite o próximo comando:
 Após isso, mantenha o terminal do `tcp.server.c` reservado, e abra um novo terminal dentro da mesma pasta.
 
 
+
 No segundo terminal, digite o seguinte comando:
 ```
 gcc -o tcp_cliente tcp_cliente.c
@@ -46,3 +48,6 @@ E logo em seguuida, digite o próximo comando:
 ```
 ./tcp_cliente 127.0.0.1  8080
 ```
+
+
+Com ambos os terminais abertos, será possível observar a comunicação socket entre o `tcp.cliente.c` e o `tcp.server.c`.
