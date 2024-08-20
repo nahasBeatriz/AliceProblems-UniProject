@@ -44,7 +44,7 @@ No segundo terminal, digite o seguinte comando:
 ```
 gcc -o tcp_cliente tcp_cliente.c
 ```
-E logo em seguuida, digite o próximo comando:
+E logo em seguida, digite o próximo comando:
 ```
 ./tcp_cliente 127.0.0.1  8080
 ```
